@@ -3,6 +3,10 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "roboto"],
+        heading: ["var(--font-sans)", "roboto"],
+      },
       colors: {
         primary: "#000000",
         "on-primary": "#ffffff",
@@ -44,14 +48,14 @@ const config: Config = {
         full: "9999px",
       },
       fontSize: {
-        "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700", letterSpacing: "-0.02em" }],
-        "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "700", letterSpacing: "-0.01em" }],
-        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
-        "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }],
-        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
-        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
-        "label-md": ["14px", { lineHeight: "20px", fontWeight: "500", letterSpacing: "0.01em" }],
-        "label-sm": ["12px", { lineHeight: "16px", fontWeight: "600" }],
+        "headline-lg": ["34px", { lineHeight: "42px", fontWeight: "700", letterSpacing: "-0.02em" }],
+        "headline-lg-mobile": ["30px", { lineHeight: "34px", fontWeight: "700", letterSpacing: "-0.01em" }],
+        "headline-md": ["26px", { lineHeight: "34px", fontWeight: "600" }],
+        "headline-sm": ["22px", { lineHeight: "30px", fontWeight: "600" }],
+        "body-lg": ["20px", { lineHeight: "30px", fontWeight: "400" }],
+        "body-md": ["18px", { lineHeight: "26px", fontWeight: "400" }],
+        "label-md": ["16px", { lineHeight: "22px", fontWeight: "500", letterSpacing: "0.01em" }],
+        "label-sm": ["14px", { lineHeight: "18px", fontWeight: "600" }],
       },
     },
   },

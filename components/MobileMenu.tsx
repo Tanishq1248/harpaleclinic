@@ -36,7 +36,7 @@ export default function MobileMenu() {
     <>
       {/* Animated Hamburger Toggle */}
       <button
-        className="relative z-[60]  flex h-10 w-10 flex-col items-center justify-center gap-[6px] md:hidden"
+        className="relative z-[60]  flex h-8 w-10 flex-col items-center justify-center gap-[6px] md:hidden"
         aria-label={open ? "Close menu" : "Open menu"}
         onClick={() => setOpen((v) => !v)}
       >

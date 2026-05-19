@@ -42,12 +42,12 @@ export default function Navbar() {
   return (
     <>
       <header
-      className={`absolute left-4 right-4 top-4 z-50 rounded-2xl transition-all duration-300 ${
+      className={`absolute left-4 right-4 top-2 z-50 rounded-2xl transition-all duration-300 ${
         scrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-white/80 backdrop-blur-md shadow-sm"
       }`}
       role="banner"
     >
-      <div className="mx-auto flex h-20 max-w-[1280px] items-center justify-between px-6 md:px-8">
+      <div className="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-6 md:px-8">
         {/* Logo */}
         <Link
           href="/"

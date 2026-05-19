@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { DM_Sans, DM_Serif_Display } from "next/font/google";
-import { Geist } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
-const dmSerif = DM_Serif_Display({ subsets: ["latin"], weight: "400", variable: "--font-dm-serif" });
+const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Harpale Clinic — Advanced Medical Care",
@@ -22,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("h-full antialiased overflow-x-hidden", "font-sans", geist.variable)}>
+    <html lang="en" className={cn("h-full antialiased overflow-x-hidden", "font-sans", roboto.variable)}>
       <body className="min-h-full flex flex-col overflow-x-hidden">
         {/* Skip to content — accessibility */}
         <a href="#main-content" className="skip-to-content">

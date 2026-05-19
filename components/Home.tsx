@@ -4,27 +4,28 @@ import { Button } from "@/components/ui/button";
 import { CLINIC, DOCTORS } from "@/lib/clinic-data";
 import ScrollReveal from "@/components/ScrollReveal";
 import ClinicStats from "@/components/ClinicStats";
+import TestimonialCarousel from "@/components/Testimonials";
 
 const specialties = [
   {
     title: "Surgery",
     description: "State-of-the-art surgical procedures with minimally invasive techniques for faster recovery.",
-    icon: "surgical",
+    image: "/surgery.jpg",
   },
   {
     title: "Maternity",
     description: "Comprehensive maternity care from prenatal to postpartum, ensuring a safe experience.",
-    icon: "pregnant_woman",
+    image: "/maternity.jpg",
   },
   {
     title: "Homoeopathy",
     description: "Alternative holistic treatments focusing on natural remedies to stimulate healing.",
-    icon: "local_pharmacy",
+    image: "/homoeopathy.jpg",
   },
   {
     title: "Cosmetology",
     description: "Advanced aesthetic treatments and dermatological care for your natural appearance.",
-    icon: "face_retouching_natural",
+    image: "/cosmetology.jpg",
   },
 ];
 
@@ -113,10 +114,8 @@ export default function Home() {
                 href="/services"
                 className="ce-card-hover group flex flex-col gap-4 p-6"
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-surface-container transition-colors group-hover:bg-secondary">
-                  <span className="material-symbols-outlined text-3xl text-secondary transition-colors group-hover:text-on-secondary" aria-hidden="true">
-                    {specialty.icon}
-                  </span>
+                <div className="relative flex h-40 w-55 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-surface-container transition-transform group-hover:scale-105">
+                  <Image src={specialty.image} alt={specialty.title} fill className="object-cover" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <h3 className="text-headline-sm text-on-surface transition-colors group-hover:text-secondary">
@@ -170,6 +169,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── Testimonials ────────────────────────────────────────── */}
+      <TestimonialCarousel />
 
       {/* ── Visit Our Clinic ──────────────────────────────────── */}
       <ScrollReveal as="section" className="mx-auto w-full max-w-[1280px] px-4 py-12 md:px-12 md:py-20">
