@@ -62,7 +62,7 @@ export default function Home() {
               Welcome to {CLINIC.name}
             </span>
             <h1 className="max-w-4xl text-headline-lg-mobile font-bold text-white md:text-[56px] md:leading-[64px]">
-             HARPALE CLINIC AND GENERAL HOSPITAL
+              HARPALE CLINIC AND GENERAL HOSPITAL
 
             </h1>
           </div>
@@ -209,7 +209,7 @@ export default function Home() {
             </div>
 
             <div className="relative min-h-[400px] bg-surface-container">
-              <iframe src={CLINIC.googleMapsEmbed} className="absolute inset-0 h-full w-full border-0" allowFullScreen loading="lazy"  title="Harpale Clinic location on Google Maps"></iframe>
+              <iframe src={CLINIC.googleMapsEmbed} className="absolute inset-0 h-full w-full border-0" allowFullScreen loading="lazy" title="Harpale Clinic location on Google Maps"></iframe>
             </div>
           </div>
         </div>
