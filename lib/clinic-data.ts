@@ -102,7 +102,7 @@ export const SERVICES = [
   {
     title: "Cancer Care",
     icon: "oncology",
-    image: "/cancer_care.jpg",
+    image: "/cancercare.png",
     description: "Cancer Diagnosis and Treatment, Cancer Chemotherapy.",
   },
   {
@@ -120,19 +120,19 @@ export const SERVICES = [
   {
     title: "Pediatric Surgery",
     icon: "child_care",
-    image: "/pediatric_surgery.jpg",
+    image: "/pediatrics.jpg",
     description: "Specialized pediatric surgery.",
   },
   {
     title: "General Surgery",
     icon: "healing",
-    image: "/general_surgery.jpg",
+    image: "/surgery.jpg",
     description: "Treatment for hernia, hemorrhoids, fistula, appendix, hydrocele, and goiter.",
   },
   {
     title: "Men's Health",
     icon: "man",
-    image: "/mens_health.jpg",
+    image: "/menshealth.jpg",
     description: "Male infertility and sexual problems, prostate diseases, treatment and surgery including laparoscopic surgery of the prostate gland.",
   },
   {
@@ -144,25 +144,25 @@ export const SERVICES = [
   {
     title: "Gallbladder Care",
     icon: "water_drop",
-    image: "/gallbladder.jpg",
+    image: "/galbladder.jpg",
     description: "Destructive surgical treatment of gallstones with lithotripsy.",
   },
   {
     title: "Uterine Surgery",
     icon: "woman",
-    image: "/uterine_surgery.jpg",
+    image: "/surgery.jpg",
     description: "Specialized uterine surgery procedures.",
   },
   {
     title: "Diagnostics",
     icon: "biotech",
-    image: "/diagnostics.jpg",
+    image: "/diagnostic.jpg",
     description: "Complete Laboratory, ECG, and X-ray services.",
   },
   {
     title: "Insurance",
     icon: "verified_user",
-    image: "/insurance.jpg",
+    image: "/tata-aig.png",
     description: "Cashless mediclaim insurance facility is available.",
   }
 ] as const;

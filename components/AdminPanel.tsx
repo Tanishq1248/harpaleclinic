@@ -237,7 +237,7 @@ export default function AdminPanel() {
         <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative h-8 w-8 overflow-hidden rounded-md bg-white shadow-sm">
-              <Image src="/logo.png" alt="Clinic Logo" fill className="object-contain p-0.5" />
+              <Image src="/cliniclogo.png" alt="Clinic Logo" fill className="object-contain p-0.5" />
             </div>
             <span className="text-headline-sm font-bold text-on-surface">{CLINIC.name}</span>
             <span className="hidden text-body-md text-on-surface-variant sm:inline">Admin Console</span>

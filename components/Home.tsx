@@ -37,23 +37,10 @@ export default function Home() {
         className="relative isolate flex min-h-[85dvh] w-full items-center justify-center overflow-hidden bg-black md:min-h-[90dvh]"
         aria-label="Welcome hero"
       >
-        {/* Mobile Safari Autoplay Fix via direct HTML injection */}
-        <div
-          className="absolute inset-0 h-full w-full"
-          dangerouslySetInnerHTML={{
-            __html: `
-              <video
-                autoplay
-                loop
-                muted
-                playsinline
-                class="pointer-events-none h-full w-full object-cover"
-              >
-                <source src="/heroveo.mp4" type="video/mp4" />
-              </video>
-            `,
-          }}
-        />
+        <video autoPlay loop muted playsInline className="pointer-events-none absolute inset-0 h-full w-full object-cover">
+          <source src="/heroveo.webm" type="video/webm" />
+          <source src="/heroveo.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
 
         <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col items-center gap-6 px-4 py-8 text-center md:px-12">
