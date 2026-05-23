@@ -236,7 +236,7 @@ export default function AdminPanel() {
       <header className="sticky top-0 z-40 border-b border-outline-variant bg-surface px-4 md:px-8">
         <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="relative h-8 w-8 overflow-hidden rounded-md bg-white shadow-sm">
+            <div className="relative h-8 w-8 overflow-hidden rounded-md bg-surface-container-lowest shadow-sm">
               <Image src="/cliniclogo.png" alt="Clinic Logo" fill className="object-contain p-0.5" />
             </div>
             <span className="text-headline-sm font-bold text-on-surface">{CLINIC.name}</span>

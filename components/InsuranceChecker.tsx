@@ -144,7 +144,7 @@ export default function InsuranceChecker() {
                 >
                   <div className="mb-4 flex items-start gap-3">
                     <div className="flex items-center gap-3">
-                      <div className="relative h-22 w-24  flex-shrink-0 overflow-hidden rounded-lg border border-outline-variant/50 bg-white" aria-hidden="true">
+                      <div className="relative h-22 w-24 flex-shrink-0 overflow-hidden rounded-lg border border-outline-variant/50 bg-surface-container-lowest" aria-hidden="true">
                         <Image src={insurer.image} alt={`${insurer.name} logo`} fill className="object-contain p-1.5" />
                       </div>
                       <span

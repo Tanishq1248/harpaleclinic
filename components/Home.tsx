@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CLINIC, DOCTORS } from "@/lib/clinic-data";
 import ScrollReveal from "@/components/ScrollReveal";
 import ClinicStats from "@/components/ClinicStats";
+import Gallery from "@/components/Gallery";
 import TestimonialCarousel from "@/components/Testimonials";
 
 const specialties = [
@@ -45,10 +46,10 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col items-center gap-6 px-4 py-8 text-center md:px-12">
           <div className="flex max-w-3xl flex-col items-center gap-2">
-            <span className="text-label-md uppercase tracking-wider text-secondary-container">
+            <span className="text-label-lg uppercase tracking-wider text-primary-fixed">
               Welcome to {CLINIC.name}
             </span>
-            <h1 className="max-w-4xl text-headline-lg-mobile font-bold text-white md:text-[56px] md:leading-[64px]">
+            <h1 className="max-w-4xl font-heading text-display-xl-mobile text-white md:text-display-xl">
               HARPALE CLINIC AND GENERAL HOSPITAL
 
             </h1>
@@ -58,13 +59,16 @@ export default function Home() {
             are here to guide you on your health journey with precision and empathy.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-            <Button asChild variant="secondary" className="h-auto rounded-full px-6 py-3 shadow-lg">
+          
+            <Button asChild  className="h-auto rounded-full px-6 py-3 shadow-lg">
               <Link href="/book-appointment">
                 Book Appointment
                 <span className="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_forward</span>
               </Link>
             </Button>
+
             <Button
+
               asChild
               variant="outline"
               className="h-auto rounded-full border-2 border-secondary px-6 py-3 text-secondary shadow-[0_0_20px_rgba(0,106,97,0.3)] transition-all hover:scale-105 hover:bg-secondary hover:text-white active:scale-95"
@@ -156,6 +160,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── Gallery ─────────────────────────────────────────────── */}
+      <Gallery />
 
       {/* ── Testimonials ────────────────────────────────────────── */}
       <TestimonialCarousel />

@@ -42,8 +42,8 @@ export default function Navbar() {
   return (
     <>
       <header
-      className={`absolute left-4 right-4 top-2 z-50 rounded-2xl transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-white/80 backdrop-blur-md shadow-sm"
+      className={`ce-surface-glass absolute left-4 right-4 top-2 z-50 rounded-2xl transition-all duration-300 ${
+        scrolled ? "shadow-[0_10px_30px_rgba(11,110,139,0.12)]" : "shadow-[0_6px_20px_rgba(11,110,139,0.08)]"
       }`}
       role="banner"
     >
@@ -55,10 +55,10 @@ export default function Navbar() {
           className="group flex items-center gap-3 transition-opacity hover:opacity-80"
           aria-label={`${CLINIC.name} — Home`}
         >
-          <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden transition-transform group-hover:scale-105">
+            <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-surface-container-lowest transition-transform group-hover:scale-105">
             <Image src="/cliniclogo.png" alt="Clinic Logo" fill className="object-contain" priority />
           </div>
-          <span className="text-xl font-bold tracking-tight text-on-surface">
+          <span className="font-heading text-xl font-bold tracking-tight text-on-surface">
             {CLINIC.name}
           </span>
         </Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
                 <span
                   className={
                     isActive
-                      ? "text-secondary"
+                      ? "text-primary"
                       : "text-on-surface-variant group-hover:text-on-surface"
                   }
                 >
@@ -85,7 +85,7 @@ export default function Navbar() {
                 </span>
                 {/* Minimal animated underline */}
                 <span
-                  className={`absolute bottom-0 left-0 h-[2px] rounded-full bg-secondary transition-all duration-300 ease-out ${
+                  className={`absolute bottom-0 left-0 h-[2px] rounded-full bg-primary transition-all duration-300 ease-out ${
                     isActive ? "w-full opacity-100" : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"
                   }`}
                 />
@@ -98,7 +98,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link
             href="/book-appointment"
-            className="hidden items-center justify-center rounded-full bg-secondary px-6 py-2.5 text-sm font-semibold text-white transition-all hover:scale-105 hover:bg-secondary hover:shadow-lg md:flex"
+            className="hidden items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-all hover:scale-105 hover:bg-primary-container hover:shadow-lg md:flex"
           >
             Book Appointment
           </Link>

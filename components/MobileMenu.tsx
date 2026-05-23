@@ -36,22 +36,22 @@ export default function MobileMenu() {
     <>
       {/* Animated Hamburger Toggle */}
       <button
-        className="relative z-[60]  flex h-8 w-10 flex-col items-center justify-center gap-[6px] md:hidden"
+        className="relative z-[60] flex h-8 w-10 flex-col items-center justify-center gap-[6px] md:hidden"
         aria-label={open ? "Close menu" : "Open menu"}
         onClick={() => setOpen((v) => !v)}
       >
         <span
-          className={`h-[2px] w-6 rounded-full bg-black  transition-all duration-300 ease-out ${
+          className={`h-[2px] w-6 rounded-full bg-on-surface transition-all duration-300 ease-out ${
             open ? "translate-y-[8px] rotate-45" : ""
           }`}
         />
         <span
-          className={`h-[2px] w-6 rounded-full bg-black transition-all duration-300 ease-out ${
+          className={`h-[2px] w-6 rounded-full bg-on-surface transition-all duration-300 ease-out ${
             open ? "opacity-0" : ""
           }`}
         />
         <span
-          className={`h-[2px] w-6 rounded-full bg-black transition-all duration-300 ease-out ${
+          className={`h-[2px] w-6 rounded-full bg-on-surface transition-all duration-300 ease-out ${
             open ? "-translate-y-[8px] -rotate-45" : ""
           }`}
         />
@@ -61,7 +61,7 @@ export default function MobileMenu() {
         <>
           {/* Backdrop Overlay */}
           <div
-            className={`fixed inset-0 z-[100] bg-black/20 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+            className={`fixed inset-0 z-[100] bg-primary/20 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
               open ? "opacity-100" : "pointer-events-none opacity-0"
             }`}
             onClick={() => setOpen(false)}
@@ -70,7 +70,7 @@ export default function MobileMenu() {
 
           {/* Slide-out Sidebar */}
           <aside
-            className={`fixed bottom-0 right-0 top-0 z-[101] flex w-[300px] max-w-[85vw] flex-col bg-white shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden ${
+            className={`fixed bottom-0 right-0 top-0 z-[101] flex w-[300px] max-w-[85vw] flex-col bg-surface-container-lowest shadow-[0_12px_40px_rgba(11,110,139,0.14)] transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden ${
               open ? "translate-x-0" : "translate-x-full"
             }`}
             aria-label="Mobile navigation"
@@ -78,9 +78,9 @@ export default function MobileMenu() {
             aria-modal="true"
           >
             {/* Sidebar Header */}
-            <div className="flex h-20 items-center justify-between px-6 border-b border-outline-variant/30 bg-surface">
-               <span className="text-lg font-bold text-on-surface">Menu</span>
-               <button onClick={() => setOpen(false)} className="rounded-full p-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface" aria-label="Close menu">
+            <div className="flex h-20 items-center justify-between border-b border-outline-variant/30 bg-surface-container-lowest px-6">
+              <span className="font-heading text-lg font-bold text-on-surface">Menu</span>
+              <button onClick={() => setOpen(false)} className="rounded-full p-2 text-on-surface-variant hover:bg-surface-container hover:text-on-surface" aria-label="Close menu">
                  <span className="material-symbols-outlined text-[24px]">close</span>
                </button>
             </div>
@@ -95,7 +95,7 @@ export default function MobileMenu() {
                     href={item.href}
                     className={`group flex items-center rounded-xl px-4 py-4 text-base font-medium transition-all ${
                       isActive
-                        ? "bg-secondary/10 text-secondary"
+                        ? "bg-primary-fixed text-on-primary-fixed-variant"
                         : "text-on-surface hover:bg-surface-container-low"
                     }`}
                   >
@@ -111,7 +111,7 @@ export default function MobileMenu() {
             <div className="border-t border-outline-variant/50 bg-surface-container-lowest p-6 pb-8">
               <Link
                 href="/book-appointment"
-                className="flex w-full items-center justify-center rounded-full bg-secondary py-3.5 text-sm font-semibold text-white transition-all hover:scale-105 hover:bg-secondary hover:shadow-md"
+                className="ce-button-primary w-full py-3.5"
                 onClick={() => setOpen(false)}
               >
                 Book Appointment

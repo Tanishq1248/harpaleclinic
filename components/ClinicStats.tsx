@@ -186,9 +186,9 @@ export default function ClinicStats() {
           margin: 0 auto;
           background: #ffffff;
           border-radius: 20px;
-          border: 1px solid #c5ddd7;
+          border: 1px solid #b8c9d4;
           overflow: hidden;
-          box-shadow: 0 4px 24px rgba(15, 92, 71, 0.07);
+          box-shadow: 0 4px 24px rgba(11, 110, 139, 0.07);
         }
 
         .stat-card {
@@ -199,7 +199,7 @@ export default function ClinicStats() {
           justify-content: center;
           padding: 3rem 2rem 2.5rem;
           position: relative;
-          border-right: 1px solid #c5ddd7;
+          border-right: 1px solid #b8c9d4;
           text-align: center;
           transition: background 0.25s ease;
         }
@@ -209,7 +209,7 @@ export default function ClinicStats() {
         }
 
         .stat-card:hover {
-          background: #f7fdfb;
+          background: #eef3fa;
         }
 
         .pulse-ring {
@@ -220,7 +220,7 @@ export default function ClinicStats() {
           width: 52px;
           height: 52px;
           border-radius: 14px;
-          border: 2px solid #0f7c60;
+          border: 2px solid #0b6e8b;
           opacity: 0;
           animation: pulseOut 1.3s ease-out forwards;
           pointer-events: none;
@@ -235,20 +235,20 @@ export default function ClinicStats() {
           width: 52px;
           height: 52px;
           border-radius: 14px;
-          background: #d4ede6;
+          background: #b3e8f8;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #0f7c60;
+          color: #004f66;
           margin-bottom: 1.25rem;
           position: relative;
           z-index: 1;
         }
 
         .stat-number {
-          font-family: var(--font-dm-serif), serif;
+          font-family: var(--font-heading), serif;
           font-size: 2.25rem;
-          color: #0d5c47;
+          color: #0b6e8b;
           line-height: 1;
           margin-bottom: 0.4rem;
           letter-spacing: -0.5px;
@@ -257,7 +257,7 @@ export default function ClinicStats() {
         .stat-label {
           font-size: 0.7rem;
           font-weight: 600;
-          color: #0f7c60;
+          color: #0b6e8b;
           text-transform: uppercase;
           letter-spacing: 0.1em;
           margin: 0 0 0.3rem 0;
@@ -265,7 +265,7 @@ export default function ClinicStats() {
 
         .stat-sub {
           font-size: 0.9rem;
-          color: #5a8e82;
+          color: #3a4a55;
           font-weight: 400;
           margin: 0;
         }
@@ -276,7 +276,7 @@ export default function ClinicStats() {
           }
           .stat-card {
             border-right: none;
-            border-bottom: 1px solid #c5ddd7;
+            border-bottom: 1px solid #b8c9d4;
             padding: 2rem 1.5rem;
           }
           .stat-card:last-child {
